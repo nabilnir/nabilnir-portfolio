@@ -26,7 +26,7 @@ export default function ContactPage() {
 
     const form = e.target
     const formDataObj = new FormData(form)
-    formDataObj.append("access_key", "YOUR_ACCESS_KEY_HERE") // User needs to replace this
+    formDataObj.append("access_key", "dd6c6ae3-c297-4c80-857d-168ae80876f2")
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -175,31 +175,35 @@ export default function ContactPage() {
                   ></textarea>
                   <label className="absolute left-0 -top-3.5 text-xs text-gray-500 dark:text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-gray-900 dark:peer-focus:text-gray-200" htmlFor="message">Tell me about your project</label>
                 </div>
-                <div className="pt-4 flex flex-col md:flex-row items-center justify-between gap-4">
-                  <div className="flex flex-col gap-2">
-                    <div className="hidden md:flex items-center gap-2 text-xs text-gray-400">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                      </svg>
-                      <span>Your data is safe</span>
-                    </div>
-                    {submitStatus === 'success' && (
-                      <p className="text-green-500 text-sm font-medium animate-fade-in-up">Message sent successfully!</p>
-                    )}
-                    {submitStatus === 'error' && (
-                      <p className="text-red-500 text-sm font-medium animate-fade-in-up">Failed to send message. Please try again.</p>
-                    )}
-                  </div>
+                <div className="pt-8 flex flex-col items-center gap-6">
+                  {submitStatus === 'success' && (
+                    <p className="text-green-500 font-medium bg-green-50 dark:bg-green-900/20 px-4 py-2 rounded-lg animate-fade-in-up">
+                      ✓ Message sent successfully!
+                    </p>
+                  )}
+                  {submitStatus === 'error' && (
+                    <p className="text-red-500 font-medium bg-red-50 dark:bg-red-900/20 px-4 py-2 rounded-lg animate-fade-in-up">
+                      ✗ Failed to send. Please try again.
+                    </p>
+                  )}
+
                   <button
-                    className="group relative inline-flex h-14 w-full md:w-auto items-center justify-center overflow-hidden rounded-full bg-primary text-white dark:bg-white dark:text-primary px-10 font-medium transition-all duration-300 hover:w-full md:hover:w-auto md:hover:px-12 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-white"
+                    className="group relative inline-flex h-14 w-full md:w-auto items-center justify-center overflow-hidden rounded-full bg-orange-500 text-white px-12 font-bold transition-all duration-300 hover:bg-orange-600 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-orange-500/20"
                     type="submit"
                     disabled={isSubmitting}
                   >
                     <span className="mr-2 text-lg">{isSubmitting ? 'Sending...' : 'Send Message'}</span>
-                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </button>
+
+                  <div className="flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                    <span>Your data is encrypted and safe</span>
+                  </div>
                 </div>
               </div>
             </form>

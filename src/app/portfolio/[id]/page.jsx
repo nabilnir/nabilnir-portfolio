@@ -11,8 +11,8 @@ const projects = {
         description: 'A comprehensive digital platform for citizens to report public infrastructure issues like broken streetlights or potholes. Built using the MERN stack with a focus on community empowerment.',
         image: '/civix.png',
         tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Firebase', 'TanStack Query', 'Tailwind CSS'],
-        liveLink: '#',
-        githubLink: 'https://github.com/nabilnir/civix-client',
+        liveLink: 'https://civix-auth-system.web.app/',
+        githubLink: 'https://github.com/nabilnir/civix-frontend',
         challenges: 'Implementing real-time status tracking and a complex role-based dashboard for citizens, staff, and administrators was a significant challenge. Ensuring data consistency across different user levels required robust state management.',
         future: 'Plans include adding AI-based image recognition to automatically categorize reported issues and implementing a gamified reward system with points and badges to encourage more citizen participation.'
     },
@@ -22,32 +22,21 @@ const projects = {
         description: 'Eco-Track is a sustainability tracking platform designed to help users monitor their carbon footprint and engage in environmental challenges. It promotes greener lifestyles through data-driven insights.',
         image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000&auto=format&fit=crop',
         tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'Tailwind CSS'],
-        liveLink: '#',
-        githubLink: 'https://github.com/nabilnir/eco-track',
+        liveLink: 'https://eco-track-client-site.web.app/',
+        githubLink: 'https://github.com/nabilnir/Eco-Track-Client',
         challenges: 'Designing an intuitive calculation engine for various lifestyle activities (like travel, energy use, and diet) while keeping the UI simple and engaging for non-technical users.',
         future: 'Integrating with smart home devices for automated energy tracking and adding a social feature for users to form teams and compete in sustainability challenges.'
     },
-    'mern-tourism': {
-        title: 'MERN Tourism',
-        category: 'Travel • E-Commerce',
-        description: 'A real-time tourism platform that allows users to explore destinations, view detailed itineraries, and book travel packages seamlessly.',
-        image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8df6?q=80&w=1000&auto=format&fit=crop',
-        tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'TanStack Query', 'Framer Motion'],
-        liveLink: '#',
-        githubLink: 'https://github.com/nabilnir/tourism-client',
-        challenges: 'Managing complex state for destination filters and real-time booking availability. Ensuring smooth animations for page transitions and image galleries using Framer Motion.',
-        future: 'Implementing a community forum for travelers to share experiences and expanding the platform to include hotel bookings and local guide services.'
-    },
-    'revx-auction': {
-        title: 'RevX-Auction',
-        category: 'Auction • Real-time',
-        description: 'A web-based auction platform demonstrating real-time interaction and database management. Users can place bids on listed items and see updates in real-time.',
-        image: 'https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1000&auto=format&fit=crop',
-        tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io'],
-        liveLink: '#',
-        githubLink: 'https://github.com/nabilnir',
-        challenges: 'Ensuring data consistency during simultaneous bids and minimizing latency for real-time updates was the primary technical hurdle.',
-        future: 'Integrating payment gateways for secure transactions and adding an automated notification system for bid updates.'
+    'toy-tropia': {
+        title: 'ToyTropia',
+        category: 'E-Commerce • Kids Marketplace',
+        description: "ToyTropia is a vibrant and playful online marketplace for kids' toys, designed to help families discover and support local toy sellers. The platform enables users to browse a wide variety of toys, view detailed product information, and leave feedback or ratings based on their purchase experiences.",
+        image: 'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=1000&auto=format&fit=crop',
+        tech: ['React.js', 'Tailwind CSS', 'DaisyUI', 'Swiper Slider', 'React Router', 'Firebase Authentication'],
+        liveLink: 'https://toytropia-com.web.app/',
+        githubLink: 'https://github.com/programming-hero-web-course2/b12-a9-firesheild-nabilnir',
+        challenges: "Ensuring a child-friendly interface while maintaining robust security was a key challenge. Implementing the local toy seller integration required careful data structuring to ensure easy discovery for families.",
+        future: 'Future plans include adding AI-based toy recommendations and a community blog for toy reviews to further engage parents and children.'
     }
 }
 

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import HeroTypewriter from '@/components/HeroTypewriter'
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ export default function Home() {
 
     const form = e.target
     const formDataObj = new FormData(form)
-    formDataObj.append("access_key", "YOUR_ACCESS_KEY_HERE") // User needs to replace this
+    formDataObj.append("access_key", "dd6c6ae3-c297-4c80-857d-168ae80876f2")
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -81,8 +82,8 @@ export default function Home() {
       description: 'A digital platform for citizens to report public infrastructure issues with a gamified reward system.',
       image: '/civix.png',
       tech: ['MongoDB', 'Express', 'React', 'Node.js', 'Firebase', 'Tailwind'],
-      liveLink: '#',
-      githubLink: 'https://github.com/nabilnir/civix-client',
+      liveLink: 'https://civix-auth-system.web.app/',
+      githubLink: 'https://github.com/nabilnir/civix-frontend',
       challenges: 'Implementing real-time status tracking and a complex role-based dashboard for citizens and admins.',
       future: 'Adding AI-based image recognition to automatically categorize reported issues.',
       featured: true,
@@ -94,64 +95,55 @@ export default function Home() {
       description: 'A platform to help users monitor their carbon footprint and engage in environmental challenges.',
       image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1000&auto=format&fit=crop',
       tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Firebase'],
-      liveLink: '#',
-      githubLink: 'https://github.com/nabilnir/eco-track',
+      liveLink: 'https://eco-track-client-site.web.app/',
+      githubLink: 'https://github.com/nabilnir/Eco-Track-Client',
       challenges: 'Designing an intuitive calculation engine for various lifestyle activities.',
       future: 'Integration with smart home devices for automated tracking.',
       new: true,
     },
     {
-      id: 'mern-tourism',
-      title: 'MERN Tourism',
-      category: 'Travel • E-Commerce',
-      description: 'A real-time tourism platform featuring travel destinations and booking options.',
-      image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8df6?q=80&w=1000&auto=format&fit=crop',
-      tech: ['MongoDB', 'Express', 'React', 'Node.js', 'TanStack Query'],
-      liveLink: '#',
-      githubLink: 'https://github.com/nabilnir/tourism-client',
-      challenges: 'Managing complex state for destination filters and real-time booking availability.',
-      future: 'Implementing a community forum for travelers to share experiences.',
-    },
-    {
-      id: 'revx-auction',
-      title: 'RevX-Auction',
-      category: 'Auction • Real-time',
-      description: 'A web-based auction platform demonstrating real-time interaction and database management.',
-      image: 'https://images.unsplash.com/photo-1523961131990-b4d3fb778b09?q=80&w=1000&auto=format&fit=crop',
-      tech: ['React', 'Node.js', 'Express', 'MongoDB'],
-      liveLink: '#',
-      githubLink: 'https://github.com/nabilnir',
-      challenges: 'Ensuring data consistency during simultaneous bids.',
-      future: 'Integrating payment gateways for secure transactions.',
+      id: 'toy-tropia',
+      title: 'ToyTropia',
+      category: 'E-Commerce • Kids Marketplace',
+      description: "A vibrant and playful online marketplace for kids' toys, designed to help families discover and support local toy sellers.",
+      image: 'https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=1000&auto=format&fit=crop',
+      tech: ['React.js', 'Tailwind CSS', 'DaisyUI', 'Firebase', 'React Router'],
+      liveLink: 'https://toytropia-com.web.app/',
+      githubLink: 'https://github.com/programming-hero-web-course2/b12-a9-firesheild-nabilnir',
+      challenges: "Implementing secure authentication and local seller integration while maintaining a playful, kid-friendly design.",
+      future: "Adding AI-powered toy recommendations and a community blog for toy reviews.",
+      featured: true,
     },
   ]
 
   return (
     <>
       {/* Hero Section */}
-      <section id="home" className="relative pt-32 md:pt-40 pb-12 overflow-hidden scroll-mt-24">
+      <section id="home" className="relative pt-20 md:pt-28 pb-12 overflow-hidden scroll-mt-24">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-hero-glow dark:bg-hero-glow-dark pointer-events-none z-0"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[85vh]">
-            <div className="lg:col-span-4 flex flex-col justify-center lg:items-start order-2 lg:order-1 relative h-full">
-              <div className="inline-flex items-center space-x-3 bg-white dark:bg-gray-800 rounded-full py-2 pl-2 pr-5 shadow-sm border border-gray-100 dark:border-gray-700 mb-8 lg:mb-24 animate-fade-in-up self-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[60vh]">
+            <div className="lg:col-span-4 flex flex-col items-start order-2 lg:order-1 relative h-full py-6 lg:py-10">
+              <div className="inline-flex items-center space-x-3 bg-white dark:bg-gray-800 rounded-full py-2 pl-2 pr-5 shadow-sm border border-gray-100 dark:border-gray-700 mb-8 animate-fade-in-up self-start">
                 <span className="relative flex h-8 w-8 items-center justify-center bg-orange-100 dark:bg-orange-900 rounded-full">
                   <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-orange-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
                 </span>
                 <span className="text-xs font-semibold text-gray-700 dark:text-gray-200">Available for new opportunities</span>
               </div>
-              <div className="flex flex-col space-y-0 leading-none mt-auto mb-12 lg:mb-0">
-                <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-condensed font-bold uppercase tracking-tighter text-gray-900 dark:text-white leading-none">
+              <div className="flex flex-col space-y-0 leading-none mt-auto">
+                <h1 className="text-6xl md:text-8xl lg:text-[6rem] font-condensed font-bold uppercase tracking-tighter text-gray-900 dark:text-white leading-none">
                   Nabil
                 </h1>
-                <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-condensed font-bold uppercase tracking-tighter text-gray-900 dark:text-white leading-none">
+                <h1 className="text-6xl md:text-8xl lg:text-[6rem] font-condensed font-bold uppercase tracking-tighter text-gray-900 dark:text-white leading-none">
                   Mahmud
                 </h1>
               </div>
             </div>
-            <div className="lg:col-span-4 relative flex flex-col items-center order-1 lg:order-2">
-              <h2 className="font-display italic text-6xl md:text-7xl lg:text-8xl text-gray-800 dark:text-gray-100 absolute -top-12 md:-top-16 lg:-top-20 w-full text-center z-0 whitespace-nowrap">
+            <div className="lg:col-span-4 relative flex flex-col items-center order-1 lg:order-2 self-center">
+              <h2 className="font-display italic text-5xl md:text-5xl lg:text-[12rem] text-gray-800 
+              dark:text-gray-100 absolute mr-[35rem] top-3 w-full  z-0 
+              whitespace-nowrap opacity-20 dark:opacity-10 pointer-events-none">
                 Hello, <span className="font-light">there</span>
               </h2>
               <div className="relative z-10 mt-12 w-full max-w-md mx-auto aspect-[3/4] lg:aspect-auto">
@@ -163,38 +155,37 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="lg:col-span-4 flex flex-col justify-between h-full lg:items-end text-right lg:text-right order-3 relative">
-              <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xs ml-auto mb-8 lg:mt-32">
-                MERN-Stack Web Developer & Machine Learning Enthusiast. Building scalable, production-ready applications.
-              </p>
-              <div className="flex flex-col items-end gap-6 mb-12">
-                <a href="#" className="inline-flex items-center justify-center px-6 py-3 bg-orange-500 text-white rounded-full font-bold hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20">
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                  Download Resume
-                </a>
-                <div className="flex gap-4">
-                  <a href="https://github.com/nabilnir" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-orange-500 transition-colors">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+            <div className="lg:col-span-4 flex flex-col lg:items-end text-right lg:text-right order-3 relative h-full py-6 lg:py-10">
+              <div className="flex flex-col items-end mb-12 lg:mt-40">
+                <p className="text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xs ml-auto mb-8">
+                  MERN-Stack Web Developer & Machine Learning Enthusiast. Building scalable, production-ready applications.
+                </p>
+                <div className="flex flex-col items-end gap-6">
+                  <a href="#" className="inline-flex items-center justify-center px-6 py-3 bg-orange-500 text-white rounded-full font-bold hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20">
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    Download Resume
                   </a>
-                  <a href="https://linkedin.com/in/nabil-mahmud-6b35033a2/" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-orange-500 transition-colors">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
-                  </a>
-                  <a href="https://x.com/NabilNir" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-orange-500 transition-colors" aria-label="X (formerly Twitter)">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z" />
-                    </svg>
-                  </a>
-                  <a href="https://facebook.com/nabilarhannir" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-orange-500 transition-colors">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
-                  </a>
+                  <div className="flex gap-4">
+                    <a href="https://github.com/nabilnir" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-orange-500 transition-colors">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/nabil-mahmud-6b35033a2/" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-orange-500 transition-colors">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+                    </a>
+                    <a href="https://x.com/NabilNir" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-orange-500 transition-colors" aria-label="X (formerly Twitter)">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z" />
+                      </svg>
+                    </a>
+                    <a href="https://facebook.com/nabilarhannir" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:text-orange-500 transition-colors">
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" /></svg>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div className="flex flex-col items-end mt-auto">
-                <h3 className="text-4xl md:text-5xl lg:text-6xl font-condensed font-bold uppercase tracking-tight text-gray-900 dark:text-white leading-[0.9]">
-                  MERN-Stack<br />
-                  Web<br />
-                  <span className="text-outline-stroke stroke-black dark:stroke-white">Developer</span>
-                </h3>
+              <div className="flex flex-col items-end mt-auto mb-6">
+                <HeroTypewriter />
+
               </div>
             </div>
           </div>
@@ -292,7 +283,7 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-2 gap-8">
               <div>
-                <div className="text-5xl font-display font-bold mb-2">89+</div>
+                <div className="text-5xl font-display font-bold mb-2">5+</div>
                 <div className="text-sm font-medium uppercase tracking-wide text-text-muted-light dark:text-text-muted-dark">Completed Projects</div>
               </div>
               <div>
@@ -300,12 +291,8 @@ export default function Home() {
                 <div className="text-sm font-medium uppercase tracking-wide text-text-muted-light dark:text-text-muted-dark">Different Countries</div>
               </div>
               <div>
-                <div className="text-5xl font-display font-bold mb-2">98%</div>
-                <div className="text-sm font-medium uppercase tracking-wide text-text-muted-light dark:text-text-muted-dark">Client Satisfaction</div>
-              </div>
-              <div>
-                <div className="text-5xl font-display font-bold mb-2">5+</div>
-                <div className="text-sm font-medium uppercase tracking-wide text-text-muted-light dark:text-text-muted-dark">Years Experience</div>
+                <div className="text-5xl font-display font-bold mb-2 text-nowrap">6 month</div>
+                <div className="text-sm font-medium uppercase tracking-wide text-text-muted-light dark:text-text-muted-dark">Experience</div>
               </div>
             </div>
           </div>
@@ -313,16 +300,16 @@ export default function Home() {
             <div className="absolute -inset-4 bg-gradient-to-r from-orange-200 to-yellow-100 dark:from-orange-900/30 dark:to-yellow-800/20 rounded-2xl blur-xl opacity-70 group-hover:opacity-100 transition duration-500"></div>
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
               <img
-                alt="Modern clean workstation with multiple monitors and creative tools"
+                alt="Professional developer workstation with a curved monitor showing code"
                 className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB3vDQXYv49L3VNhe-9845zIW5THaozwsHlstu6X7ICLIaj2cNN72ZHnl6tSdmaou10kYBjeN68xpWmDyH_1N6GFx6dAtnVWsYM3fGNHAcPd8dJb1bTch9GgxnPg8modD0QjiPtHnOY5TyL8V4qGyVtZuqztBUBZFPAs6R_dqxUYT5MOKV0O0li9MyBb2MUTWiYI8ExXn8WOrIfIsy5TCmHMgmyBbjXvekHBpUOsF_LuM4h1ztgXlXaLRr9jbcvLNvhAv0MRvpb_hr"
+                src="/workstation.png"
               />
               <div className="absolute top-8 right-8 bg-white/90 dark:bg-black/90 backdrop-blur p-4 rounded-lg shadow-lg max-w-[180px] transform translate-x-4 md:translate-x-12 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500">
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                  <div className="text-xs font-bold uppercase">Workstation</div>
+                  <div className="w-3 h-3 rounded-full bg-orange-500"></div>
+                  <div className="text-xs font-bold uppercase tracking-wider">Workspace</div>
                 </div>
-                <p className="text-xs text-text-muted-light dark:text-text-muted-dark">Optimized for high-performance design workflows.</p>
+                <p className="text-xs text-text-muted-light dark:text-text-muted-dark font-medium leading-relaxed">Modern setup optimized for high-performance development.</p>
               </div>
             </div>
           </div>
@@ -335,96 +322,125 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl md:text-5xl font-bold uppercase tracking-wide">Experience & Skills</h2>
           </div>
-          <div className="w-full">
-            <div id="skills" className="grid grid-cols-1 md:grid-cols-4 gap-6 py-8 border-b border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-surface-dark transition-colors px-4 rounded-lg scroll-mt-24">
-              <div className="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark self-center">Frontend</div>
-              <div className="md:col-span-1 text-xl font-bold self-center">UI & Interaction</div>
-              <div className="md:col-span-2 flex flex-wrap gap-6 items-center self-center">
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="React" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">React</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all dark:invert" alt="Next.js" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Next.js</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Tailwind" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Tailwind</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="JavaScript" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">JavaScript</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <svg className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all text-gray-900 dark:text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0l6.74 24L24 12.64 17.26 0z" /></svg>
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity px-1 text-center leading-tight">Framer Motion</span>
-                </div>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-8 border-b border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-surface-dark transition-colors px-4 rounded-lg">
-              <div className="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark self-center">Backend</div>
-              <div className="md:col-span-1 text-xl font-bold self-center">Service & Data</div>
-              <div className="md:col-span-2 flex flex-wrap gap-6 items-center self-center">
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Node.js" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Node.js</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all dark:invert" alt="Express.js" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Express.js</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="MongoDB" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">MongoDB</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Firebase" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Firebase</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="/tanstack.webp" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Query" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity text-center leading-tight">TanStack Query</span>
+          <div className="w-full space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-0 border-y border-gray-200 dark:border-gray-700">
+              {/* Frontend Row */}
+              <div className="contents group">
+                <div className="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark py-8 px-4 flex items-center border-b md:border-b-0 border-gray-100 dark:border-gray-800 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">Frontend</div>
+                <div className="md:col-span-1 text-xl font-bold py-8 px-4 flex items-center border-b md:border-b-0 border-gray-100 dark:border-gray-800 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">UI & Interaction</div>
+                <div className="md:col-span-2 flex flex-wrap gap-6 items-center py-8 px-4 border-b border-gray-200 dark:border-gray-700 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="React" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">React</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all dark:invert" alt="Next.js" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Next.js</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Tailwind" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Tailwind</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="JavaScript" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">JavaScript</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <svg className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all text-gray-900 dark:text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0l6.74 24L24 12.64 17.26 0z" /></svg>
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity px-1 text-center leading-tight">Framer Motion</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-8 border-b border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-surface-dark transition-colors px-4 rounded-lg">
-              <div className="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark self-center">Design</div>
-              <div className="md:col-span-1 text-xl font-bold self-center">Creative Tools</div>
-              <div className="md:col-span-2 flex flex-wrap gap-6 items-center self-center">
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="w-7 h-7 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Figma" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Figma</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Canva" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Canva</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Photoshop" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Photoshop</span>
+
+              {/* Backend Row */}
+              <div className="contents group">
+                <div className="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark py-8 px-4 flex items-center border-b md:border-b-0 border-gray-100 dark:border-gray-800 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">Backend</div>
+                <div className="md:col-span-1 text-xl font-bold py-8 px-4 flex items-center border-b md:border-b-0 border-gray-100 dark:border-gray-800 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">Service & Data</div>
+                <div className="md:col-span-2 flex flex-wrap gap-6 items-center py-8 px-4 border-b border-gray-200 dark:border-gray-700 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Node.js" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Node.js</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all dark:invert" alt="Express.js" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Express.js</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="MongoDB" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">MongoDB</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Firebase" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Firebase</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="/tanstack.webp" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Query" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity text-center leading-tight">TanStack Query</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 py-8 border-b border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-surface-dark transition-colors px-4 rounded-lg">
-              <div className="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark self-center">Tools & Others</div>
-              <div className="md:col-span-1 text-xl font-bold self-center">Environment</div>
-              <div className="md:col-span-2 flex flex-wrap gap-6 items-center self-center">
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Git" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Git</span>
+
+              {/* AI Integration Row */}
+              <div className="contents group">
+                <div className="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark py-8 px-4 flex items-center border-b md:border-b-0 border-gray-100 dark:border-gray-800 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">AI Integration</div>
+                <div className="md:col-span-1 text-xl font-bold py-8 px-4 flex items-center border-b md:border-b-0 border-gray-100 dark:border-gray-800 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">Intelligent Dev</div>
+                <div className="md:col-span-2 flex flex-wrap gap-6 items-center py-8 px-4 border-b border-gray-200 dark:border-gray-700 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="/copilot.webp" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Copilot" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">GitHub Copilot</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="/cursor.webp" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Cursor" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Cursor</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="/antigravity.webp" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Antigravity" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Antigravity</span>
+                  </div>
                 </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Python" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Python</span>
+              </div>
+
+              {/* Design Row */}
+              <div className="contents group">
+                <div className="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark py-8 px-4 flex items-center border-b md:border-b-0 border-gray-100 dark:border-gray-800 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">Design</div>
+                <div className="md:col-span-1 text-xl font-bold py-8 px-4 flex items-center border-b md:border-b-0 border-gray-100 dark:border-gray-800 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">Creative Tools</div>
+                <div className="md:col-span-2 flex flex-wrap gap-6 items-center py-8 px-4 border-b border-gray-200 dark:border-gray-700 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="w-7 h-7 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Figma" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Figma</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Canva" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Canva</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Photoshop" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Photoshop</span>
+                  </div>
                 </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="VS Code" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">VS Code</span>
-                </div>
-                <div className="group/skill relative flex flex-col items-center gap-2">
-                  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Postman" />
-                  <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Postman</span>
+              </div>
+
+              {/* Tools Row */}
+              <div className="contents group">
+                <div className="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark py-8 px-4 flex items-center group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">Tools & Others</div>
+                <div className="md:col-span-1 text-xl font-bold py-8 px-4 flex items-center group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">Environment</div>
+                <div className="md:col-span-2 flex flex-wrap gap-6 items-center py-8 px-4 border-gray-200 dark:border-gray-700 group-hover:bg-white dark:group-hover:bg-surface-dark transition-colors">
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Git" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Git</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Python" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Python</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="VS Code" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">VS Code</span>
+                  </div>
+                  <div className="group/skill relative flex flex-col items-center gap-2">
+                    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" className="w-8 h-8 filter grayscale group-hover/skill:grayscale-0 transition-all" alt="Postman" />
+                    <span className="text-[10px] uppercase font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity">Postman</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -592,31 +608,35 @@ export default function Home() {
                     ></textarea>
                     <label className="absolute left-0 -top-3.5 text-xs text-gray-500 dark:text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-xs peer-focus:text-gray-900 dark:peer-focus:text-gray-200" htmlFor="message">Tell me about your project</label>
                   </div>
-                  <div className="pt-4 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <div className="flex flex-col gap-2">
-                      <div className="hidden md:flex items-center gap-2 text-xs text-gray-400">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                        </svg>
-                        <span>Your data is safe</span>
-                      </div>
-                      {submitStatus === 'success' && (
-                        <p className="text-green-500 text-sm font-medium animate-fade-in-up">Message sent successfully!</p>
-                      )}
-                      {submitStatus === 'error' && (
-                        <p className="text-red-500 text-sm font-medium animate-fade-in-up">Failed to send message. Please try again.</p>
-                      )}
-                    </div>
+                  <div className="pt-8 flex flex-col items-center gap-6">
+                    {submitStatus === 'success' && (
+                      <p className="text-green-500 font-medium bg-green-50 dark:bg-green-900/20 px-4 py-2 rounded-lg animate-fade-in-up">
+                        ✓ Message sent successfully!
+                      </p>
+                    )}
+                    {submitStatus === 'error' && (
+                      <p className="text-red-500 font-medium bg-red-50 dark:bg-red-900/20 px-4 py-2 rounded-lg animate-fade-in-up">
+                        ✗ Failed to send. Please try again.
+                      </p>
+                    )}
+
                     <button
-                      className="group relative inline-flex h-14 w-full md:w-auto items-center justify-center overflow-hidden rounded-full bg-primary text-white dark:bg-white dark:text-primary px-10 font-medium transition-all duration-300 hover:w-full md:hover:w-auto md:hover:px-12 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-white"
+                      className="group relative inline-flex h-14 w-full md:w-auto items-center justify-center overflow-hidden rounded-full bg-orange-500 text-white px-12 font-bold transition-all duration-300 hover:bg-orange-600 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-orange-500/20"
                       type="submit"
                       disabled={isSubmitting}
                     >
                       <span className="mr-2 text-lg">{isSubmitting ? 'Sending...' : 'Send Message'}</span>
-                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                       </svg>
                     </button>
+
+                    <div className="flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                      </svg>
+                      <span>Your data is encrypted and safe</span>
+                    </div>
                   </div>
                 </div>
               </form>
