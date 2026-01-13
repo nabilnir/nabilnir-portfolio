@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Madison Portfolio - Services &amp; About</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@300;400;500;600;700&amp;family=Oswald:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f59e0b", // A warm amber/orange tone from the images
+              "background-light": "#fcfaf7", // Warm off-white
+              "background-dark": "#121212", // Deep charcoal black
+              "surface-light": "#ffffff",
+              "surface-dark": "#1e1e1e",
+              "text-main-light": "#1a1a1a",
+              "text-main-dark": "#e5e5e5",
+              "text-muted-light": "#6b7280",
+              "text-muted-dark": "#9ca3af",
+            },
+            fontFamily: {
+              serif: ["'Instrument Serif'", "serif"],
+              sans: ["'Inter'", "sans-serif"],
+              display: ["'Oswald'", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              'xl': '1rem',
+              '2xl': '1.5rem',
+            },
+          },
+        },
+      };
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #4b5563;
+        }
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main-light dark:text-text-main-dark font-sans transition-colors duration-300">
+<nav class="w-full px-6 py-6 flex justify-between items-center max-w-7xl mx-auto">
+<div class="font-serif italic text-2xl font-medium">Madison.</div>
+<div class="hidden md:flex space-x-8 text-sm font-medium text-text-muted-light dark:text-text-muted-dark">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<a class="hover:text-primary transition-colors" href="#">Works</a>
+<a class="text-primary" href="#">About</a> 
+<a class="hover:text-primary transition-colors" href="#">Services</a>
+<a class="hover:text-primary transition-colors" href="#">Testimonial</a>
+</div>
+<a class="bg-black dark:bg-white text-white dark:text-black px-6 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity" href="#">Contact</a>
+</nav>
+<main>
+<section class="pt-20 pb-32 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="fade-in-up">
+<h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight uppercase tracking-tight mb-8">
+                        I am <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-600">Madison</span>
+</h1>
+<div class="flex items-center space-x-4 mb-8">
+<span class="flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<span class="text-sm font-medium bg-white dark:bg-surface-dark px-4 py-2 rounded-full shadow-sm border border-gray-100 dark:border-gray-800">
+                            Available for new opportunities
+                        </span>
+</div>
+<p class="text-lg text-text-muted-light dark:text-text-muted-dark max-w-md leading-relaxed">
+                        Specialized in Web Design, UX/UI, Webflow, and Front End Development. I create digital products that are functional and beautiful.
+                    </p>
+</div>
+<div class="relative fade-in-up delay-200 h-[500px] w-full flex justify-center items-center">
+<div class="absolute inset-0 bg-gradient-to-tr from-orange-100 via-yellow-50 to-transparent dark:from-orange-900/20 dark:via-yellow-900/10 dark:to-transparent rounded-full blur-3xl opacity-60"></div>
+<div class="relative z-10 w-full h-full rounded-2xl overflow-hidden shadow-2xl bg-gray-200 dark:bg-gray-800">
+<img alt="Portrait of Madison" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7F6AWtlBZQeNNwv9-1uHGgpBiKlacmslgHtx1tKCK_gsc2r-F_S4EG0PlZdenwHki1PcFz30ORR1MTCdYBPdUgCPevHZvxCBxXauoVxjSB7FYdUWvaoJayz2puOPHNNmLySV26mepFogW3IwmG5ouMEam5cDBphPocIMIQ1XWdVV_uzrhiUGbbISYiHLDDrssFrtLj_xtJLo1G7wO5u9E2a7_0fgtyIGMZYb2ywnqnGStGfAdbLUNZHRl4z6v4O01E3GoxEusnK9_"/>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="backdrop-blur-md bg-white/30 dark:bg-black/30 p-6 rounded-xl border border-white/20">
+<h3 class="font-display text-2xl uppercase font-bold text-white mb-1">Digital Product Designer</h3>
+<p class="text-white/80 text-sm">Crafting user-centric experiences</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-surface-dark border-y border-gray-100 dark:border-gray-800">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="font-display text-4xl md:text-5xl font-bold uppercase tracking-wide mb-4">I can help you with</h2>
+<div class="h-1 w-24 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-gray-200 dark:divide-gray-700">
+<div class="group py-8 md:py-0 md:px-6 first:pl-0 lg:last:pr-0 relative">
+<span class="font-serif italic text-6xl text-gray-200 dark:text-gray-800 absolute -top-4 left-4 -z-10 group-hover:text-primary/20 transition-colors">01</span>
+<div class="relative z-10 pt-4">
+<h3 class="font-bold text-xl mb-3 group-hover:text-primary transition-colors">Website Design</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-4">
+                                The full cycle of services to create and launch a website from scratch or redesign a live website along.
+                            </p>
+<a class="inline-flex items-center text-xs font-bold uppercase tracking-widest border-b border-black dark:border-white pb-0.5 hover:text-primary hover:border-primary transition-colors" href="#">
+                                See More 
+                                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+<div class="group py-8 md:py-0 md:px-6 relative">
+<span class="font-serif italic text-6xl text-gray-200 dark:text-gray-800 absolute -top-4 left-4 -z-10 group-hover:text-primary/20 transition-colors">02</span>
+<div class="relative z-10 pt-4">
+<h3 class="font-bold text-xl mb-3 group-hover:text-primary transition-colors">Mobile App</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-4">
+                                We create elegant user experiences for applications that achieve business goals and make users happy.
+                            </p>
+<a class="inline-flex items-center text-xs font-bold uppercase tracking-widest border-b border-black dark:border-white pb-0.5 hover:text-primary hover:border-primary transition-colors" href="#">
+                                See More
+                                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+<div class="group py-8 md:py-0 md:px-6 relative">
+<span class="font-serif italic text-6xl text-gray-200 dark:text-gray-800 absolute -top-4 left-4 -z-10 group-hover:text-primary/20 transition-colors">03</span>
+<div class="relative z-10 pt-4">
+<h3 class="font-bold text-xl mb-3 group-hover:text-primary transition-colors">Development</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-4">
+                                Bringing designs to life with clean code and modern technologies like Webflow, React, and Tailwind.
+                            </p>
+<a class="inline-flex items-center text-xs font-bold uppercase tracking-widest border-b border-black dark:border-white pb-0.5 hover:text-primary hover:border-primary transition-colors" href="#">
+                                See More
+                                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+<div class="group py-8 md:py-0 md:px-6 relative">
+<span class="font-serif italic text-6xl text-gray-200 dark:text-gray-800 absolute -top-4 left-4 -z-10 group-hover:text-primary/20 transition-colors">04</span>
+<div class="relative z-10 pt-4">
+<h3 class="font-bold text-xl mb-3 group-hover:text-primary transition-colors">The Full Package</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark leading-relaxed mb-4">
+                                Get the best of both worlds: a website, captured youthful energy and get fully functional design.
+                            </p>
+<a class="inline-flex items-center text-xs font-bold uppercase tracking-widest border-b border-black dark:border-white pb-0.5 hover:text-primary hover:border-primary transition-colors" href="#">
+                                See More
+                                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-display text-4xl md:text-5xl font-bold uppercase leading-tight mb-8">
+                        Turning my vision <br/>
+<span class="font-serif normal-case italic font-light text-primary">into solutions</span> for <br/> 
+                        the work on.
+                    </h2>
+<p class="text-lg text-text-muted-light dark:text-text-muted-dark mb-12 max-w-lg">
+                        My journey involves transforming abstract ideas into tangible digital realities. I focus on clarity, purpose, and aesthetics.
+                    </p>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<div class="text-5xl font-display font-bold mb-2">89+</div>
+<div class="text-sm font-medium uppercase tracking-wide text-text-muted-light dark:text-text-muted-dark">Completed Projects</div>
+</div>
+<div>
+<div class="text-5xl font-display font-bold mb-2">18+</div>
+<div class="text-sm font-medium uppercase tracking-wide text-text-muted-light dark:text-text-muted-dark">Different Countries</div>
+</div>
+<div>
+<div class="text-5xl font-display font-bold mb-2">98%</div>
+<div class="text-sm font-medium uppercase tracking-wide text-text-muted-light dark:text-text-muted-dark">Client Satisfaction</div>
+</div>
+<div>
+<div class="text-5xl font-display font-bold mb-2">5+</div>
+<div class="text-sm font-medium uppercase tracking-wide text-text-muted-light dark:text-text-muted-dark">Years Experience</div>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-r from-orange-200 to-yellow-100 dark:from-orange-900/30 dark:to-yellow-800/20 rounded-2xl blur-xl opacity-70 group-hover:opacity-100 transition duration-500"></div>
+<div class="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
+<img alt="Modern clean workstation with multiple monitors and creative tools" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB3vDQXYv49L3VNhe-9845zIW5THaozwsHlstu6X7ICLIaj2cNN72ZHnl6tSdmaou10kYBjeN68xpWmDyH_1N6GFx6dAtnVWsYM3fGNHAcPd8dJb1bTch9GgxnPg8modD0QjiPtHnOY5TyL8V4qGyVtZuqztBUBZFPAs6R_dqxUYT5MOKV0O0li9MyBb2MUTWiYI8ExXn8WOrIfIsy5TCmHMgmyBbjXvekHBpUOsF_LuM4h1ztgXlXaLRr9jbcvLNvhAv0MRvpb_hr"/>
+<div class="absolute top-8 right-8 bg-white/90 dark:bg-black/90 backdrop-blur p-4 rounded-lg shadow-lg max-w-[180px] transform translate-x-4 md:translate-x-12 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-3 h-3 rounded-full bg-red-500"></div>
+<div class="text-xs font-bold uppercase">Workstation</div>
+</div>
+<p class="text-xs text-text-muted-light dark:text-text-muted-dark">Optimized for high-performance design workflows.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-gray-50 dark:bg-surface-dark/50">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-display text-4xl md:text-5xl font-bold uppercase tracking-wide">Experience &amp; Skills</h2>
+</div>
+<div class="w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 py-8 border-b border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-surface-dark transition-colors px-4 rounded-lg">
+<div class="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark self-center">2016-24</div>
+<div class="md:col-span-1 text-xl font-bold self-center">Visual Design</div>
+<div class="md:col-span-2 flex flex-wrap gap-x-8 gap-y-2 text-sm text-text-muted-light dark:text-text-muted-dark self-center">
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Figma</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">After Effects</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Photoshop</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Final Cut</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Midjourney</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 py-8 border-b border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-surface-dark transition-colors px-4 rounded-lg">
+<div class="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark self-center">2018-24</div>
+<div class="md:col-span-1 text-xl font-bold self-center">Development</div>
+<div class="md:col-span-2 flex flex-wrap gap-x-8 gap-y-2 text-sm text-text-muted-light dark:text-text-muted-dark self-center">
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Webflow</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">HTML &amp; CSS</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">JavaScript</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Xano</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">React</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 py-8 border-b border-gray-200 dark:border-gray-700 hover:bg-white dark:hover:bg-surface-dark transition-colors px-4 rounded-lg">
+<div class="md:col-span-1 text-sm font-bold text-text-muted-light dark:text-text-muted-dark self-center">2022-24</div>
+<div class="md:col-span-1 text-xl font-bold self-center">Project Management</div>
+<div class="md:col-span-2 flex flex-wrap gap-x-8 gap-y-2 text-sm text-text-muted-light dark:text-text-muted-dark self-center">
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Notion</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Google Tables</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">Microsoft To Do</span>
+<span class="flex items-center gap-2 before:content-[''] before:w-1.5 before:h-1.5 before:bg-primary before:rounded-full">TickTick</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="py-12 px-6 max-w-7xl mx-auto border-t border-gray-200 dark:border-gray-800">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-serif italic text-2xl font-medium">Madison.</div>
+<div class="text-sm text-text-muted-light dark:text-text-muted-dark">
+                    © 2024 Madison Portfolio. All rights reserved.
+                </div>
+<div class="flex space-x-6">
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#"><span class="sr-only">Twitter</span>
+<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors" href="#"><span class="sr-only">LinkedIn</span>
+<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+</main>
+
+</body></html>

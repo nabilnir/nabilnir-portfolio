@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Experience &amp; Skills Portfolio Section</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@300;400;500;600;700&amp;family=Oswald:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#111827", // Dark gray/black for primary actions
+                        "background-light": "#F9F9F7", // Warm off-white from screenshot
+                        "background-dark": "#121212", // Deep dark background
+                        "text-light": "#1F2937",
+                        "text-dark": "#E5E7EB",
+                        "accent-orange": "#FF8C42", // Orange accent from the gradient hints
+                    },
+                    fontFamily: {
+                        display: ["'Oswald'", "sans-serif"], // Strong headings
+                        body: ["'Inter'", "sans-serif"], // Clean body text
+                        serif: ["'Instrument Serif'", "serif"], // Elegant accents
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                    },
+                },
+            },
+        };
+    </script>
+<style>.skill-row {
+            transition: background-color 0.3s ease;
+        }
+        .skill-row:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+        }
+        .dark .skill-row:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }.skill-list li::before {
+            content: "•";
+            color: #9CA3AF;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-body antialiased selection:bg-orange-200 selection:text-orange-900">
+<main class="w-full min-h-screen flex flex-col items-center py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-6xl w-full text-center mb-16 relative">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-orange-200/20 dark:bg-orange-500/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+<h2 class="text-4xl md:text-5xl font-display font-bold uppercase tracking-wide text-gray-900 dark:text-white mb-4">
+                Experience &amp; Skills
+            </h2>
+<p class="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-lg font-serif italic">
+                A journey through my professional timeline and the tools I use to create digital experiences.
+            </p>
+</div>
+<div class="max-w-6xl w-full border-t border-gray-200 dark:border-gray-800">
+<div class="group skill-row grid grid-cols-1 md:grid-cols-12 gap-6 py-12 border-b border-gray-200 dark:border-gray-800 items-start md:items-center">
+<div class="md:col-span-2 pl-2">
+<span class="font-display text-lg font-medium text-gray-500 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors">
+                        2016-24
+                    </span>
+</div>
+<div class="md:col-span-4">
+<h3 class="text-2xl md:text-3xl font-display font-semibold text-gray-900 dark:text-white">
+                        Visual Design
+                    </h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1 md:hidden">Core visual competencies</p>
+</div>
+<div class="md:col-span-6 flex flex-wrap gap-x-8 gap-y-2">
+<ul class="skill-list list-none pl-4 grid grid-cols-2 sm:grid-cols-2 gap-x-12 gap-y-2 w-full text-sm font-medium text-gray-700 dark:text-gray-300">
+<li>Figma</li>
+<li>After Effects</li>
+<li>Photoshop</li>
+<li>Final Cut Pro</li>
+<li>Midjourney</li>
+<li>Illustrator</li>
+</ul>
+</div>
+</div>
+<div class="group skill-row grid grid-cols-1 md:grid-cols-12 gap-6 py-12 border-b border-gray-200 dark:border-gray-800 items-start md:items-center">
+<div class="md:col-span-2 pl-2">
+<span class="font-display text-lg font-medium text-gray-500 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors">
+                        2018-24
+                    </span>
+</div>
+<div class="md:col-span-4">
+<h3 class="text-2xl md:text-3xl font-display font-semibold text-gray-900 dark:text-white">
+                        Development
+                    </h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1 md:hidden">Frontend &amp; No-code</p>
+</div>
+<div class="md:col-span-6 flex flex-wrap gap-x-8 gap-y-2">
+<ul class="skill-list list-none pl-4 grid grid-cols-2 sm:grid-cols-2 gap-x-12 gap-y-2 w-full text-sm font-medium text-gray-700 dark:text-gray-300">
+<li>Webflow</li>
+<li>HTML &amp; CSS</li>
+<li>JavaScript</li>
+<li>Xano</li>
+<li>Tailwind CSS</li>
+<li>React (Basic)</li>
+</ul>
+</div>
+</div>
+<div class="group skill-row grid grid-cols-1 md:grid-cols-12 gap-6 py-12 border-b border-gray-200 dark:border-gray-800 items-start md:items-center">
+<div class="md:col-span-2 pl-2">
+<span class="font-display text-lg font-medium text-gray-500 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors">
+                        2022-24
+                    </span>
+</div>
+<div class="md:col-span-4">
+<h3 class="text-2xl md:text-3xl font-display font-semibold text-gray-900 dark:text-white">
+                        Project Management
+                    </h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1 md:hidden">Organization &amp; Workflow</p>
+</div>
+<div class="md:col-span-6 flex flex-wrap gap-x-8 gap-y-2">
+<ul class="skill-list list-none pl-4 grid grid-cols-2 sm:grid-cols-2 gap-x-12 gap-y-2 w-full text-sm font-medium text-gray-700 dark:text-gray-300">
+<li>Notion</li>
+<li>Google Tables</li>
+<li>Microsoft To Do</li>
+<li>TickTick</li>
+<li>Slack</li>
+<li>Linear</li>
+</ul>
+</div>
+</div>
+<div class="group skill-row grid grid-cols-1 md:grid-cols-12 gap-6 py-12 border-b border-gray-200 dark:border-gray-800 items-start md:items-center">
+<div class="md:col-span-2 pl-2">
+<span class="font-display text-lg font-medium text-gray-500 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors">
+                        2020-23
+                    </span>
+</div>
+<div class="md:col-span-4">
+<h3 class="text-2xl md:text-3xl font-display font-semibold text-gray-900 dark:text-white">
+                        Art Direction
+                    </h3>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1 md:hidden">Creative Strategy</p>
+</div>
+<div class="md:col-span-6 flex flex-wrap gap-x-8 gap-y-2">
+<ul class="skill-list list-none pl-4 grid grid-cols-2 sm:grid-cols-2 gap-x-12 gap-y-2 w-full text-sm font-medium text-gray-700 dark:text-gray-300">
+<li>Brand Identity</li>
+<li>Storyboarding</li>
+<li>Photography</li>
+<li>Set Design</li>
+<li>Typography</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-20 text-center">
+<a class="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-primary rounded-full hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1" href="#">
+                Download Resume
+                <svg class="h-5 w-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</main>
+
+</body></html>
