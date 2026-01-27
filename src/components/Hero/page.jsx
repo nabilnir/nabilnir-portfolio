@@ -117,14 +117,20 @@ export default function Hero() {
                   Get in Touch
                   <ArrowRight className="w-4 h-4" />
                 </Link>
-                <a
-                  href="/resume.pdf"
-                  download
+                <button
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = '/resume.pdf';
+                    link.download = 'resume.pdf';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
                   className="btn-secondary flex items-center justify-center gap-2"
                 >
                   <Download className="w-4 h-4" />
                   Resume
-                </a>
+                </button>
               </div>
             </div>
           </motion.div>
