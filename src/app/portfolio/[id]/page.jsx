@@ -2,7 +2,7 @@
 
 import { use } from 'react'
 import Link from 'next/link'
-import { ArrowLeft, ExternalLink, Github } from 'lucide-react'
+import { ArrowLeft, ExternalLink, Github, GitBranch } from 'lucide-react'
 
 const projects = {
     'civix': {
@@ -13,6 +13,7 @@ const projects = {
         tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Firebase', 'TanStack Query', 'Tailwind CSS'],
         liveLink: 'https://civix-auth-system.web.app/',
         githubLink: 'https://github.com/nabilnir/civix-frontend',
+        backendLink: 'https://github.com/nabilnir/civix-backend',
         challenges: 'Implementing real-time status tracking and a complex role-based dashboard for citizens, staff, and administrators was a significant challenge. Ensuring data consistency across different user levels required robust state management.',
         future: 'Plans include adding AI-based image recognition to automatically categorize reported issues and implementing a gamified reward system with points and badges to encourage more citizen participation.'
     },
@@ -24,6 +25,7 @@ const projects = {
         tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'Tailwind CSS'],
         liveLink: 'https://eco-track-client-site.web.app/',
         githubLink: 'https://github.com/nabilnir/Eco-Track-Client',
+        backendLink: 'https://github.com/nabilnir/eco-track-server',
         challenges: 'Designing an intuitive calculation engine for various lifestyle activities (like travel, energy use, and diet) while keeping the UI simple and engaging for non-technical users.',
         future: 'Integrating with smart home devices for automated energy tracking and adding a social feature for users to form teams and compete in sustainability challenges.'
     },
@@ -35,6 +37,7 @@ const projects = {
         tech: ['React.js', 'Tailwind CSS', 'DaisyUI', 'Swiper Slider', 'React Router', 'Firebase Authentication'],
         liveLink: 'https://toytropia-com.web.app/',
         githubLink: 'https://github.com/programming-hero-web-course2/b12-a9-firesheild-nabilnir',
+        backendLink: 'https://github.com/nabilnir/toytropia-backend',
         challenges: "Ensuring a child-friendly interface while maintaining robust security was a key challenge. Implementing the local toy seller integration required careful data structuring to ensure easy discovery for families.",
         future: 'Future plans include adding AI-based toy recommendations and a community blog for toy reviews to further engage parents and children.'
     }
@@ -129,6 +132,17 @@ export default function ProjectPage({ params }) {
                                 View Code
                                 <Github className="w-4 h-4 ml-2" />
                             </a>
+                            {project.backendLink && (
+                                <a
+                                    href={project.backendLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center w-full py-4 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl font-bold hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+                                >
+                                    Backend Repo
+                                    <GitBranch className="w-4 h-4 ml-2" />
+                                </a>
+                            )}
                         </section>
                     </div>
                 </div>

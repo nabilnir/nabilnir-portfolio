@@ -161,7 +161,7 @@ export default function Home() {
                   MERN-Stack Web Developer & Machine Learning Enthusiast. Building scalable, production-ready applications.
                 </p>
                 <div className="flex flex-col items-end gap-6">
-                  <a href="#" className="inline-flex items-center justify-center px-6 py-3 bg-orange-500 text-white rounded-full font-bold hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20">
+                  <a href="/resume.pdf" download="/resume.pdf" className="inline-flex items-center justify-center px-6 py-3 bg-orange-500 text-white rounded-full font-bold hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20">
                     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                     Download Resume
                   </a>
@@ -320,7 +320,7 @@ export default function Home() {
       </section>
 
       {/* Experience & Skills Section */}
-      <section id="experience" className="py-24 bg-gray-50 dark:bg-surface-dark/50 scroll-mt-24">
+      <section id="skills" className="py-24 bg-gray-50 dark:bg-surface-dark/50 scroll-mt-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl md:text-5xl font-bold uppercase tracking-wide">Experience & Skills</h2>
