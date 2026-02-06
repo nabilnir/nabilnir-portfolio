@@ -40,6 +40,17 @@ const projects = {
         backendLink: 'https://github.com/nabilnir/toytropia-backend',
         challenges: "Ensuring a child-friendly interface while maintaining robust security was a key challenge. Implementing the local toy seller integration required careful data structuring to ensure easy discovery for families.",
         future: 'Future plans include adding AI-based toy recommendations and a community blog for toy reviews to further engage parents and children.'
+    },
+    'pick-packaging': {
+        title: 'PickPackaging',
+        category: 'Marketplace • B2B Platform',
+        description: 'A specialized packaging marketplace where brands purchase packaging materials in bulk for their goods. The platform serves as a bridge between manufacturers and businesses, streamlining the procurement of high-quality packaging across various sectors including food service, agriculture, and industrial processing.',
+        image: '/pick-packaging.png',
+        tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel', 'Geist Font'],
+        liveLink: 'https://pick-packaging.vercel.app/',
+        githubLink: 'https://github.com/nabilnir/pick-packaging',
+        challenges: 'Developing a scalable marketplace layout that handles diverse product sectors while maintaining a premium, minimalist aesthetic. Ensuring high performance and accessible navigation for bulk purchasers was a primary engineering focus.',
+        future: 'Future enhancements include integrating AI-powered sustainability ratings for packaging materials and a custom request-for-quote system for bespoke packaging solutions.'
     }
 }
 

@@ -76,6 +76,20 @@ export default function Home() {
 
   const projects = [
     {
+      id: 'pick-packaging',
+      title: 'PickPackaging',
+      category: 'Marketplace • B2B Platform',
+      description: 'A packaging marketplace where brands purchase packaging materials in bulk for their goods.',
+      image: '/pick-packaging.png',
+      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+      liveLink: 'https://pick-packaging.vercel.app/',
+      githubLink: 'https://github.com/nabilnir/pick-packaging',
+      challenges: 'Building a scalable marketplace with bulk purchasing logic and diverse product categories.',
+      future: 'Implementing AI-driven recommendations for packaging solutions.',
+      new: true,
+    },
+
+    {
       id: 'civix',
       title: 'CiviX',
       category: 'Full-Stack • Public Utility',
