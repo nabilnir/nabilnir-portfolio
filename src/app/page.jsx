@@ -293,10 +293,10 @@ export default function Home() {
               <span className="font-serif normal-case italic font-light text-primary">into community</span> solutions.
             </h2>
             <p className="text-lg text-text-muted-light dark:text-text-muted-dark mb-6 max-w-lg">
-              My programming journey began with a deep curiosity for how digital systems work, leading me to pursue a B.Sc. in Computer Science and Engineering. I've evolved from solving algorithmic puzzles to architecting robust, scalable web applications using the MERN stack. I thrive on the challenge of building production-ready systems that solve real-world problems, with a particular interest in integrating AI/ML capabilities into modern web interfaces.
+              My programming journey began with a deep curiosity for how digital systems work, leading me to pursue a B.Sc. in Computer Science and Engineering. I have evolved from solving algorithmic puzzles to architecting robust, scalable web applications using the MERN stack. I thrive on the challenge of building production-ready systems that solve real-world problems, with a particular interest in integrating AI/ML capabilities into modern web interfaces.
             </p>
             <p className="text-lg text-text-muted-light dark:text-text-muted-dark mb-12 max-w-lg">
-              Beyond the code, I believe in maintaining a balanced perspective. When I'm not building software, you can find me exploring the latest tech trends, reading sci-fi novels, or enjoying a game of cricket. I'm a lifelong learner who brings creativity and detailed attention to every project I undertake.
+              Beyond the code, I believe in maintaining a balanced perspective. When I am not building software, you can find me exploring the latest tech trends, reading sci-fi novels, or enjoying a game of cricket. I am a lifelong learner who brings creativity and detailed attention to every project I undertake.
             </p>
             <div className="grid grid-cols-2 gap-8">
               <div>
